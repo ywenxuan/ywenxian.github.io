@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 01</title>
+    <title>Posts on 闫文宣的博客</title>
     <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on 01</description>
+    <description>Recent content in Posts on 闫文宣的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Sep 2021 12:50:37 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Second</title>
+      <title>个人收获</title>
       <link>http://example.org/posts/second/</link>
       <pubDate>Sun, 26 Sep 2021 12:50:37 +0800</pubDate>
       
       <guid>http://example.org/posts/second/</guid>
-      <description>第二篇 第二篇的fubiaoti </description>
+      <description>首先下载课堂派资料中的四个文件
+第一步解压并安装Hugo</description>
     </item>
     
     <item>
-      <title>Firstposts</title>
+      <title>搭建个人博客</title>
       <link>http://example.org/posts/firstposts/</link>
       <pubDate>Sun, 26 Sep 2021 12:47:38 +0800</pubDate>
       
       <guid>http://example.org/posts/firstposts/</guid>
-      <description>#第一个大标题 ##二级标题</description>
+      <description>第⼀步 安装 Hugo
+ 解压⽂件 hugo_extended_0.88.1_Windows-64bit 将解压得到的三个⽂件放置到⾃⼰指定的安装⽬录 通过命令⾏进⼊安装⽬录，执⾏ hugo version 观察是否有版本信息输出，确认安装 结果 修改系统变量，将 hugo 的安装⽬录添加到系统变量中  第⼆步 创建博客本地⽂件夹
+ 通过命令⾏前往你希望放置博客⽂件的⽬录 执⾏ hugo new site &amp;lt;blog_name&amp;gt; 命令，在当前⽬录下⽣成⼀个名字为 &amp;lt;blof_name&amp;gt; 的⽂件夹，这个⽂件夹将作为存放所有博客⽂件的⽬录  第三步 创建博客⽂章
+ 通过命令⾏前往上⼀步中创建的博客⽬录 执⾏ hugo new posts/&amp;lt;post_name&amp;gt; 命令，创建⼀篇名字为 &amp;lt;post_name&amp;gt; 的博客 ⽂章  第四步 设置博客主题
+ 解压⽂件 gohugo-theme-ananke-master 将解压得到的⽂件夹更名为 anake 复制重命名后的⽂件夹到博客本地⽂件夹的 themes ⽬录下 修改 config.toml ⽂件，添加⼀⾏ theme = &amp;ldquo;&amp;lt;theme_name&amp;gt;&amp;rdquo; ，其中 &amp;lt;theme_name&amp;gt; 填⼊主题的名字  第五步 本地预览博客
+ 在命令⾏中前往创建的博客⽬录 执⾏ hugo server -D 命令 打开浏览器进⼊对应的⽹站进⾏预览（⽹站会在执⾏完命令后提示你）  第六步 安装 Git</description>
     </item>
     
   </channel>
