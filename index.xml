@@ -8,13 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Sep 2021 12:50:37 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>个人收获</title>
+      <title>个人总结</title>
       <link>http://example.org/posts/second/</link>
       <pubDate>Sun, 26 Sep 2021 12:50:37 +0800</pubDate>
       
       <guid>http://example.org/posts/second/</guid>
-      <description>首先下载课堂派资料中的四个文件
-第一步解压并安装Hugo</description>
+      <description>一、博客搭建 (一) 准备文件： 1.搭建准备： &amp;lt;1&amp;gt;.注册GitHub账号： 直接百度GitHub，进入GitHub官网，根据指引注册即可。 【遇到问题】：GitHub官网无法访问 【解决方法】： &amp;lt;2&amp;gt;.Hugo： 解压⽂件 hugo_extended_0.88.1_Windows-64bit 并将文件放置指定安装目录 配置系统环境变量 &amp;lt;3&amp;gt;.Git： 打开 Git-2.33.0.2-64-bit.exe ⽂件并安装 &amp;lt;4&amp;gt;.GitHubDesktopSetup： 打开 GitHubDesktopSetup-x64.exe文件并安装 登录个人Github账号
+网盘：https://ws28.cn/f/6ip0bnges2t</description>
     </item>
     
     <item>
