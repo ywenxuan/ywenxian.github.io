@@ -36,7 +36,7 @@
 <meta itemprop="name" content="个人总结">
 <meta itemprop="description" content="一、博客搭建 (一) 准备文件： 1.注册GitHub账号： 直接百度GitHub，进入GitHub官网，根据指引注册即可。 【遇到问题】：GitHub官网无法访问 【解决方法】： (1)修改hosts文件 通过访问 www.ipaddress.com，查询github.com的IP地址，并将其添加到本地hosts文件内。 (2)添加浏览器插件 在Chrome中的油猴插件中添加FastGitHub插件。 (3)换个时间 2.安装Hugo： 解压⽂件 hugo_extended_0.88.1_Windows-64bit 并将文件放置指定安装目录 配置系统环境变量 3.安装Git： 打开 Git-2.33.0.2-64-bit.exe ⽂件并安装 4.GitHubDesktopSetup： 打开 GitHubDesktopSetup-x64.exe文件并安装 登录个人Github账号 （二）创建本地博客 1.创建本地的文章 (1). 创建博客文件夹: 在博客文件目录地址栏输入cmd，进入到cmd命令行，通过hugo new site &lt;blog_name&gt; 命令 新建博客文件夹 (2). 创建文章(.md文件): 通过hugo new posts/&lt;post_name&gt; 命令新建文章（.md文件）。 (3). 修改文章内容: 通过修改博客文件夹\content\文章（.md文件）的内容，来修改博客内文章的内容。 (4). 设置主题: 解压⽂件 gohugo-theme-ananke-master 将解压得到的⽂件夹更名为 anake 复制重命名后的⽂件夹到博客本地⽂件夹的 themes ⽬录下 修改 config.toml ⽂件，添加⼀⾏ theme = &ldquo;&lt;theme_name&gt;&rdquo; ，其中 &lt;theme_name&gt; 填⼊主题的名字 2. 本地预览博客: 在博客目录打开cmd命令行 执行hugo server -D 命令，在本地浏览器打开cmd中显示的Web Server is available at 后面的网址，即可看到自己写的博客。 【遇到问题】：网址无法访问 【解决方法】：不能使用 Ctrl&#43;C 复制网址，hugo server -D 命令是用计算机作为服务器打开， Ctrl&#43;C 是关闭服务器的命令。选择网址，使用鼠标右键进行复制网址。 （三）将博客托管到 GitHub 1."><meta itemprop="datePublished" content="2021-09-26T12:50:37+08:00" />
 <meta itemprop="dateModified" content="2021-09-26T12:50:37+08:00" />
-<meta itemprop="wordCount" content="134">
+<meta itemprop="wordCount" content="156">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="个人总结"/>
 <meta name="twitter:description" content="一、博客搭建 (一) 准备文件： 1.注册GitHub账号： 直接百度GitHub，进入GitHub官网，根据指引注册即可。 【遇到问题】：GitHub官网无法访问 【解决方法】： (1)修改hosts文件 通过访问 www.ipaddress.com，查询github.com的IP地址，并将其添加到本地hosts文件内。 (2)添加浏览器插件 在Chrome中的油猴插件中添加FastGitHub插件。 (3)换个时间 2.安装Hugo： 解压⽂件 hugo_extended_0.88.1_Windows-64bit 并将文件放置指定安装目录 配置系统环境变量 3.安装Git： 打开 Git-2.33.0.2-64-bit.exe ⽂件并安装 4.GitHubDesktopSetup： 打开 GitHubDesktopSetup-x64.exe文件并安装 登录个人Github账号 （二）创建本地博客 1.创建本地的文章 (1). 创建博客文件夹: 在博客文件目录地址栏输入cmd，进入到cmd命令行，通过hugo new site &lt;blog_name&gt; 命令 新建博客文件夹 (2). 创建文章(.md文件): 通过hugo new posts/&lt;post_name&gt; 命令新建文章（.md文件）。 (3). 修改文章内容: 通过修改博客文件夹\content\文章（.md文件）的内容，来修改博客内文章的内容。 (4). 设置主题: 解压⽂件 gohugo-theme-ananke-master 将解压得到的⽂件夹更名为 anake 复制重命名后的⽂件夹到博客本地⽂件夹的 themes ⽬录下 修改 config.toml ⽂件，添加⼀⾏ theme = &ldquo;&lt;theme_name&gt;&rdquo; ，其中 &lt;theme_name&gt; 填⼊主题的名字 2. 本地预览博客: 在博客目录打开cmd命令行 执行hugo server -D 命令，在本地浏览器打开cmd中显示的Web Server is available at 后面的网址，即可看到自己写的博客。 【遇到问题】：网址无法访问 【解决方法】：不能使用 Ctrl&#43;C 复制网址，hugo server -D 命令是用计算机作为服务器打开， Ctrl&#43;C 是关闭服务器的命令。选择网址，使用鼠标右键进行复制网址。 （三）将博客托管到 GitHub 1."/>
@@ -184,11 +184,21 @@
 通过界面左上角File-Add local repository-Choose 选择博客文件夹中的public文件夹即可。
 点击Fetch origin上传，同时设置仓库名GitHub 对应的仓库名⼀定要是&lt;github_id&gt;.github.io 的格式，其中 &lt;github_id&gt; 是个⼈ GitHub 账号的 ID
 点击Summary(required) 输入摘要，以及Description中的相关描述。再点击Commit to master。
-最后再点击Fetch origin上传即可。
+最后再点击Push origin上传即可。
 打开 &lt;github_id&gt;.github.io 就可以看到搭建完成后的博客
-【遇到困难】
-&lt;1&gt;.连接超时 Failed to connect to github.com port 443: Timed out
-&lt;2&gt;.</p>
+【遇到困难】：
+&lt;1&gt;.连接超时
+Failed to connect to github.com port 443: Timed out
+&lt;2&gt;.上传草稿
+OpenSSL SSL_read: Connection was reset, errno 10054
+&lt;3&gt;博客界面404
+【解决方法】：
+&lt;1&gt;.同【GitHub官网无法访问】
+多次尝试，等GitHub官网能访问时，也就能上传了。
+&lt;2&gt;.修改本地posts文件中的draft，将true改为false。
+&lt;3&gt;.在GitHub官网中登录到个人界面，选择进入上传的博客仓库，点击Setting。
+1.在Options中的Repository name查看仓库名称是否符合要求。
+2.在Pages中的Source，将None设置为master，并在Custom domain中设置&lt;github_id&gt;.github.io，其中 &lt;github_id&gt; 是个⼈ GitHub 账号的 ID</p>
 <ul class="pa0">
   
 </ul>
