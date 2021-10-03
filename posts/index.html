@@ -106,8 +106,7 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      一、博客搭建 (一) 准备文件： 1.搭建准备： &lt;1&gt;.注册GitHub账号： 直接百度GitHub，进入GitHub官网，根据指引注册即可。 【遇到问题】：GitHub官网无法访问 【解决方法】： &lt;2&gt;.Hugo： 解压⽂件 hugo_extended_0.88.1_Windows-64bit 并将文件放置指定安装目录 配置系统环境变量 &lt;3&gt;.Git： 打开 Git-2.33.0.2-64-bit.exe ⽂件并安装 &lt;4&gt;.GitHubDesktopSetup： 打开 GitHubDesktopSetup-x64.exe文件并安装 登录个人Github账号
-网盘：https://ws28.cn/f/6ip0bnges2t
+      一、博客搭建 (一) 准备文件： 1.注册GitHub账号： 直接百度GitHub，进入GitHub官网，根据指引注册即可。 【遇到问题】：GitHub官网无法访问 【解决方法】： (1)修改hosts文件 通过访问 www.ipaddress.com，查询github.com的IP地址，并将其添加到本地hosts文件内。 (2)添加浏览器插件 在Chrome中的油猴插件中添加FastGitHub插件。 (3)换个时间 2.安装Hugo： 解压⽂件 hugo_extended_0.88.1_Windows-64bit 并将文件放置指定安装目录 配置系统环境变量 3.安装Git： 打开 Git-2.33.0.2-64-bit.exe ⽂件并安装 4.GitHubDesktopSetup： 打开 GitHubDesktopSetup-x64.exe文件并安装 登录个人Github账号 （二）创建本地博客 1.创建本地的文章 (1). 创建博客文件夹: 在博客文件目录地址栏输入cmd，进入到cmd命令行，通过hugo new site &lt;blog_name&gt; 命令 新建博客文件夹 (2). 创建文章(.md文件): 通过hugo new posts/&lt;post_name&gt; 命令新建文章（.md文件）。 (3). 修改文章内容: 通过修改博客文件夹\content\文章（.md文件）的内容，来修改博客内文章的内容。 (4). 设置主题: 解压⽂件 gohugo-theme-ananke-master 将解压得到的⽂件夹更名为 anake 复制重命名后的⽂件夹到博客本地⽂件夹的 themes ⽬录下 修改 config.toml ⽂件，添加⼀⾏ theme = &ldquo;&lt;theme_name&gt;&rdquo; ，其中 &lt;theme_name&gt; 填⼊主题的名字 2. 本地预览博客: 在博客目录打开cmd命令行 执行hugo server -D 命令，在本地浏览器打开cmd中显示的Web Server is available at 后面的网址，即可看到自己写的博客。 【遇到问题】：网址无法访问 【解决方法】：不能使用 Ctrl+C 复制网址，hugo server -D 命令是用计算机作为服务器打开， Ctrl+C 是关闭服务器的命令。选择网址，使用鼠标右键进行复制网址。 （三）将博客托管到 GitHub 1.
     </div>
   </div>
 </div>
