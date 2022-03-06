@@ -1,5 +1,7 @@
 # 安装RH294虚拟机
 
+链接: https://pan.baidu.com/s/1onqjPvTFf5Lr4Ft7Pbal8w?pwd=yva7 提取码: yva7 
+
 解压RH294.7z.001，在VMware中打开虚拟机，选择RH294.vmx，开启虚拟机，选择我以移动该虚拟机。
 
 ## 设置VMware 网络模式
